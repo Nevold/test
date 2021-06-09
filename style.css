@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(37, 35, 35);
+}
+.menu {
+  margin-bottom: 40px;
+}
+
+.button,
+.input {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 20px;
+  background: linear-gradient(106.89deg, #b0aec0 -14.32%, #262929 100.68%);
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 600;
+  /* font-size: 18px; */
+  line-height: 21px;
+  /* text-align: center; */
+  text-transform: uppercase;
+  /* color: #ffffff; */
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 1px 2px 2px rgba(74, 74, 82, 0.8);
+  margin-left: 10px;
+}
+
+.form {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.drive-control {
+  margin-top: 20px;
+}
+
+.road {
+  border-bottom: 2px dotted whitesmoke;
+}

@@ -60,16 +60,23 @@ const driveCar = async (id) => {
   );
 };
 
-getCar(1).then((obj) => {
-  let { name: name, color: color } = obj;
-  console.log(name, ' ', color);
+// getCar(1).then((obj) => {
+//   let { name: name, color: color } = obj;
+//   console.log(name, ' ', color);
+// });
+// (async () => {
+//   let { name: name, color: color } = await getCar(4);
+//   console.log(name, ' ', color);
+// })();
+let color = document.getElementById('create-color');
+color.addEventListener('input', () => {
+  let carIm = document.querySelector('#car-img > g');
+  carIm.style.fill = color.value;
 });
-(async () => {
-  let { name: name, color: color } = await getCar(4);
-  console.log(name, ' ', color);
-})();
 
-async function hello() {
-  return 'Hello';
-}
-hello();
+// let carIm = document.querySelector('#car-img > g');
+// carIm.style.fill = 'red';
+// // carIm.addEventListener('click', () => {
+// //   console.log(carIm.fill)
+// // });
+// console.log(carIm);
