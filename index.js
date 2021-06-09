@@ -11,7 +11,9 @@ const getCars = async (page, limit = 7) => {
 
 const getCar = async (id) => {
   const rensponce = await fetch(`${garage}/${id}`);
-  return console.log(await rensponce.json());
+  return rensponce.json();
+  // const data = await rensponce.json();
+  // return data;
 };
 
 const createCar = async (body) => {
@@ -57,14 +59,17 @@ const driveCar = async (id) => {
       : await rensponce.json()
   );
 };
-// getCar(9);
 
-// deleteCar(6);
-// getCars(1);
-// updateCar(9, {
-//   name: 'BMW444',
-//   color: '#fede00',
-// });
-// startEngineCar(1);
-// stopEngineCar(5);
-// driveCar(1);
+getCar(1).then((obj) => {
+  let { name: name, color: color } = obj;
+  console.log(name, ' ', color);
+});
+(async () => {
+  let { name: name, color: color } = await getCar(4);
+  console.log(name, ' ', color);
+})();
+
+async function hello() {
+  return 'Hello';
+}
+hello();
