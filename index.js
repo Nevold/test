@@ -6,12 +6,12 @@ const winners = `${base}/winners`;
 
 const getCars = async (page, limit = 7) => {
   const rensponce = await fetch(`${garage}?_page${page}&_limit=${limit}`);
-  return console.log({ item: await rensponce.json(), count: rensponce.headers.get('X-Total-Count') });
+  return { item: await rensponce.json(), count: rensponce.headers.get('X-Total-Count') };
 };
 
 const getCar = async (id) => {
   const rensponce = await fetch(`${garage}/${id}`);
-  return rensponce.json();
+  return await rensponce.json();
   // const data = await rensponce.json();
   // return data;
 };
@@ -73,6 +73,11 @@ color.addEventListener('input', (event) => {
   let carIm = document.querySelector('#car-img > g');
   carIm.style.fill = event.target.value;
 });
+
+(async () => {
+  let { item: item, count: count } = await getCars(1);
+  console.log(item, ' ', count);
+})();
 
 // let carIm = document.querySelector('#car-img > g');
 // carIm.style.fill = 'red';
