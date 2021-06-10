@@ -1,5 +1,6 @@
 body {
   background-color: rgb(37, 35, 35);
+  margin-left: 30px;
 }
 .menu {
   margin-bottom: 40px;
@@ -7,26 +8,38 @@ body {
 
 .button,
 .input {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  height: 20px;
-  background: linear-gradient(106.89deg, #b0aec0 -14.32%, #262929 100.68%);
-  border-radius: 3px;
-  font-style: normal;
-  font-weight: 600;
-  /* font-size: 18px; */
-  line-height: 21px;
-  /* text-align: center; */
-  text-transform: uppercase;
-  /* color: #ffffff; */
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-size: 11px;
+  color: rgb(205, 216, 228);
+  text-shadow: 0 -1px rgb(46, 53, 58);
+  text-decoration: none;
+  user-select: none;
+  line-height: 2em;
+  padding: 1px 1.2em;
   outline: none;
-  box-sizing: border-box;
-  border: none;
-  box-shadow: 1px 2px 2px rgba(74, 74, 82, 0.8);
-  margin-left: 10px;
+  border: 1px solid rgba(33, 43, 52, 1);
+  border-radius: 3px;
+  background: rgb(81, 92, 102) linear-gradient(rgb(81, 92, 102), rgb(69, 78, 87));
+  box-shadow: inset 0 1px rgba(101, 114, 126, 1), inset 0 0 1px rgba(140, 150, 170, 0.8), 0 1px rgb(83, 94, 104),
+    0 0 1px rgb(86, 96, 106);
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
+.menu-button {
+  background: rgb(144, 151, 158) linear-gradient(rgb(155, 160, 165), rgb(143, 138, 138));
+}
+
+.icon {
+  background: rgb(223, 191, 162) linear-gradient(rgb(15, 15, 15), rgb(230, 43, 10));
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.start-icon {
+  color: chartreuse;
+}
 .form {
   margin-bottom: 10px;
   display: flex;
@@ -39,4 +52,30 @@ body {
 
 .road {
   border-bottom: 2px dotted whitesmoke;
+  position: relative;
+}
+
+.button:active {
+  background: rgb(17, 17, 17) linear-gradient(rgb(16, 18, 19), rgb(69, 78, 87));
+}
+
+h1,
+h2 {
+  color: antiquewhite;
+}
+.car {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }

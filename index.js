@@ -69,9 +69,9 @@ const driveCar = async (id) => {
 //   console.log(name, ' ', color);
 // })();
 let color = document.getElementById('create-color');
-color.addEventListener('input', () => {
+color.addEventListener('input', (event) => {
   let carIm = document.querySelector('#car-img > g');
-  carIm.style.fill = color.value;
+  carIm.style.fill = event.target.value;
 });
 
 // let carIm = document.querySelector('#car-img > g');
