@@ -70,13 +70,14 @@ const driveCar = async (id) => {
 // })();
 
 createCar({
-  name: 'Opel',
+  name: 'Opell',
   color: '#e6e6ff',
 });
 
 let color = document.getElementById('create-color');
 let carName = document.querySelector('.car-name');
 let garageList = document.querySelector('.garage-list');
+document.getElementById;
 color.addEventListener('change', async (event) => {
   let carIm = document.querySelector('#car-img > g');
   carIm.style.fill = event.target.value;
@@ -88,6 +89,7 @@ color.addEventListener('change', async (event) => {
 // deleteCar(2);
 document.body.addEventListener('click', async (event) => {
   let id = event.target.id.split('remove-car-').pop();
+  console.log(event.target);
   deleteCar(id);
 });
 
