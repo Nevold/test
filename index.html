@@ -212,13 +212,33 @@
         </ul>
       </div>
       <div><p class="message" id="message"></p></div>
-      <div id="winner"></div>
-      <div class="pagination">
-        <button class="button menu-button" id="prev">Prev</button>
-        <button class="button menu-button" id="next">Next</button>
-      </div>
     </div>
-
+    <div id="winner">
+      <h1 class="winner-logo">Winners</h1>
+      <h2>Page#</h2>
+      <table class="table">
+        <thead>
+          <th>Number</th>
+          <th>Cars</th>
+          <th>Name</th>
+          <th class="table-button table-wins" id="sort-wins">Wins</th>
+          <th class="table-button table-time" id="sort-time">Best time</th>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>car</td>
+              <td>mazda</td>
+              <td>win</td>
+              <td>time</td>
+            </tr>
+          </tbody>
+        </thead>
+      </table>
+    </div>
+    <div class="pagination">
+      <button class="button menu-button" id="prev">Prev</button>
+      <button class="button menu-button" id="next">Next</button>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

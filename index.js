@@ -69,10 +69,10 @@ const driveCar = async (id) => {
 //   console.log(name, ' ', color);
 // })();
 
-createCar({
-  name: 'Opell',
-  color: '#e6e6ff',
-});
+// createCar({
+//   name: 'Opell',
+//   color: '#e6e6ff',
+// });
 
 let color = document.getElementById('create-color');
 let carName = document.querySelector('.car-name');

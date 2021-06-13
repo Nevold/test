@@ -87,3 +87,21 @@ li {
   margin-left: 10px;
   font-weight: 600;
 }
+
+thead {
+  background-color: rgb(48, 48, 148);
+  color: bisque;
+}
+.table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+th,
+td {
+  margin: 2px;
+  padding-left: 5px;
+  padding: 2px 10px;
+}
+td {
+  color: aliceblue;
+}
