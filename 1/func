@@ -1,0 +1,18 @@
+// function returnMainPage(): void {
+//   const winnerTag = document.querySelector('.winner');
+//   const winnerImage = document.querySelector('.image-score');
+//   const scoreList = document.getElementsByClassName('score');
+//   winnerTag?.classList.add('invisible');
+//   winnerImage?.classList.remove('image-winner');
+//   winnerImage?.classList.remove('image-lose');
+//   Array.from(scoreList).forEach(element => element.remove());
+//   const cardsList = document.querySelectorAll('.cards-wrapper');
+//   cardsList.forEach(elem => elem.classList.remove('chosen-card'));
+//   setImageCard();
+//   setWordCard();
+//   setLinkHomePage();
+//   setInvisibleButton();
+//   setSoundWord();
+//   // // setToggleCheck();
+//   setInvisibleButtonMain();
+// }
